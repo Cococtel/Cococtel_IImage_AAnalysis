@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7iVpbyOLRtjDb+byQb8SA7PTFwSdduuqEIm3J70i+Bk=",
+  "Source": "ComputerVisionAPI",
+  "BasePath": "_content/ComputerVisionAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

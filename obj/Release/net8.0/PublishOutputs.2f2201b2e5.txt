@@ -1,0 +1,13 @@
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\ComputerVisionAPI.exe
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\appsettings.Development.json
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\appsettings.json
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\ComputerVisionAPI.dll
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\ComputerVisionAPI.deps.json
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\ComputerVisionAPI.runtimeconfig.json
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\ComputerVisionAPI.pdb
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\Microsoft.OpenApi.dll
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\Newtonsoft.Json.dll
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\aguan\Documents\TOMAS\UNAL\DADM\COCOCTEL\Proyecto\ComputerVisionAPI\out\Swashbuckle.AspNetCore.SwaggerUI.dll

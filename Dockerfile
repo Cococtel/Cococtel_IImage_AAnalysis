@@ -8,6 +8,11 @@ RUN dotnet restore
 
 # Copy the rest of the code and publish
 COPY . .
+
+# Ensure `appsettings.json` is copied
+RUN cp appsettings.json out/
+
+# Publish the application
 RUN dotnet publish -c Release -o out
 
 # Use the .NET runtime for running

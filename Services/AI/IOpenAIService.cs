@@ -7,6 +7,6 @@ namespace ComputerVisionAPI.Services.AI
 {
     public interface IOpenAIService
     {
-        Task<List<string>> ExtractTextFromImage(string url);
+        Task<List<string>> ExtractTextFromImage(IFormFile imageFile);
     }
 }

@@ -5,6 +5,8 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 using ComputerVisionAPI.Network;
+
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Linq;
 
@@ -21,24 +23,31 @@ namespace ComputerVisionAPI.Services.AI
             _settings = options.Value;
         }
 
-        public async Task<List<string>> ExtractTextFromImage(string url)
+        public async Task<List<string>> ExtractTextFromImage([FromForm] IFormFile imageFile)
         {
-            var byteData = await GetImageAsByteArray(url);
-            var operationLocation = await PostImageForAnalysis(byteData);
+            if (imageFile == null || imageFile.Length == 0)
+            {
+                return new List<string>();
+            }
 
-            if (string.IsNullOrEmpty(operationLocation)) return new List<string>();
+            using var memoryStream = new MemoryStream();
+            await imageFile.CopyToAsync(memoryStream);
+            var byteData = memoryStream.ToArray();
+
+            var operationLocation = await PostImageForAnalysis(byteData);
+            if (string.IsNullOrEmpty(operationLocation))
+            {
+                return new List<string>();
+            }
 
             var contentString = await GetAnalysisResult(operationLocation);
+            if (string.IsNullOrEmpty(contentString))
+            {
+                return new List<string>();
+            }
 
-            if (string.IsNullOrEmpty(contentString)) return new List<string>();
-
-            return ParseAnalysisResult(contentString);
-        }
-
-        private async Task<byte[]> GetImageAsByteArray(string url)
-        {
-            using var client = _clientFactory.CreateClient();
-            return await client.GetByteArrayAsync(url);
+            var extractedText = ParseAnalysisResult(contentString);
+            return extractedText;
         }
 
         private async Task<string?> PostImageForAnalysis(byte[] byteData)
